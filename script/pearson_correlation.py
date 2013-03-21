@@ -88,8 +88,8 @@ class PearsonCorrelation:
 
     def calc_correlation(self):
         for i in range(0, len(self.distinct_user_ids) - 1):
-            if i % 5000 == 0:
-                print '%d users calc' % i
+            if i % 10 == 0:
+                print i
             user_a = self.distinct_user_ids[i]
             if user_a in self.user_rate_dict:
                 rate_info_a = self.user_rate_dict[user_a]
